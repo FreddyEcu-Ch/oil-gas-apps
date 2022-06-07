@@ -8,7 +8,7 @@ poro = 0.30
 swi = 0.2
 boi = 30
 
-print(poes(area,h,poro,swi,boi))
+print(poes(area, h, poro, swi, boi))
 
 # %% Defined Arrays for STOIIP
 area = np.array([450.0, 500.0, 550.0])
