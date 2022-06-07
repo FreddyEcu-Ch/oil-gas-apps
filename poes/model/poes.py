@@ -19,4 +19,4 @@ def poes(area, h, poro, swi, boi):
     -------
 
     """
-    return 7758 * area * poro * h (1 - swi) / boi
+    return 7758 * area * poro * h(1 - swi) / boi
