@@ -1,4 +1,4 @@
 import streamlit as st
 st.title("Bienvenidos a software para ingeniería en petróleo")
 st.write("Vamos a desarrollar una aplicación para el cálculo del POES")
-st.write("FICT 2022 Oil and Gas")
+st.write("FICT 2022 Oil and Gas ")
