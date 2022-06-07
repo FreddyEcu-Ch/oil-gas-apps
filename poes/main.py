@@ -10,4 +10,4 @@ boi = np.array([1,1.01,1.2])
 print(area)
 #Imprimimos el area para ver el arreglo, y a continuación se imrpime el resultado de la funcion poes
 print(poes(area,h,poro,swi,boi))
-    #hi, hello
+    #hi, hello,l
