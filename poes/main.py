@@ -27,5 +27,23 @@ print(np.around(poes(area, h, poro, swc, boi), 2))
 porosity_norm = norm.rvs(loc=0.2, scale=0.05, size=1000)
 porosity_norm = np.where(porosity_norm < 0, 0, porosity_norm)
 porosity_norm = np.where(porosity_norm > 0.4, 0.4, porosity_norm)
-print(porosity_norm)
+#print(porosity_norm)
 
+# Log normal distribution
+porosity_log = lognorm.rvs(s=0.8, loc=0, scale=0.2, size=1000)
+porosity_log = np.where(porosity_log < 0, 0, porosity_log)
+porosity_log = np.where(porosity_log > 0.4, 0.4, porosity_log)
+#print(porosity_log)
+
+# Exponential distribution
+porosity_exp = expon.rvs(loc=0, scale=0.05, size=1000)
+porosity_exp = np.where(porosity_exp > 0.4, 0.4, porosity_exp)
+#print(porosity_exp)
+
+# Triangular distribution
+porosity_tri = triang.rvs(c=0.3, loc=0, scale=0.4, size=1000)
+#print(porosity_tri)
+
+# Uniform distribution
+porosity_uni = uniform.rvs(loc=0, scale=0.4, size=1000)
+print(porosity_uni)
