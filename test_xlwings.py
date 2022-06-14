@@ -17,7 +17,7 @@ sheet["E5"].options(pd.DataFrame, index=False, expand="table").value = pd.DataFr
 )
 
 #%% Call a dataframe from MS Excel
-df = sheet["C11"].options(pd.DataFrame, index=False, expand='table').value
+df = sheet["C11"].options(pd.DataFrame, index=False, expand="table").value
 
 #%%
 print(df)
