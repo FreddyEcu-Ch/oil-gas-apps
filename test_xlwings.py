@@ -8,7 +8,8 @@ xb = xw.Book()
 sheet = xb.sheets["sheet1"]
 
 #%% Create a numpy array
-sheet["B1:B5"].options(np.array, transpose=True).value = np.array([1, 2, 3, 4, 5])
+rango = "B1:B5"
+sheet[rango].options(np.array, transpose=True).value = np.array([1, 2, 3, 4, 5])
 
 #%% Create a Dataframe
 sheet["E5"].options(pd.DataFrame, index=False, expand="table").value = pd.DataFrame(
