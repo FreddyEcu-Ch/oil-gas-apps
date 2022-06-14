@@ -1,5 +1,6 @@
 import numpy as np
 from poes.model.poes import poes
+from scipy.stats import expon, lognorm, norm, triang, uniform
 
 # %% Define input variables
 area = 25
@@ -19,4 +20,12 @@ boi = np.array([1.01, 1.1, 1.12])
 
 print(np.around(poes(area, h, poro, swc, boi), 2))
 
+
+# %% Defining random values for porosity from norm_values variable
+
+# Normal distribution
+porosity_norm = norm.rvs(loc=0.2, scale=0.05, size=1000)
+porosity_norm = np.where(porosity_norm < 0, 0, porosity_norm)
+porosity_norm = np.where(porosity_norm > 0.4, 0.4, porosity_norm)
+print(porosity_norm)
 
