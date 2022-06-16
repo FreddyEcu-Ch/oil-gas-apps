@@ -77,7 +77,7 @@ area_uni = uniform.rvs(loc=50, scale=500, size=1000)
 print(area_uni)
 
 #----------
-#Kevin Sevilla Lara
+#POES-11 BOi Kevin Sevilla Lara
 
 # %% Defining random values for porosity from norm_values variable
 
