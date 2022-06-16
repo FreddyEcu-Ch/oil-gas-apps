@@ -46,3 +46,4 @@ BOi_tri = triang.rvs(c=0.3, loc=1, scale=1, size=1000)
 # Uniform distribution
 BOi_uni = uniform.rvs(loc=1, scale=1, size=1000)
 print(BOi_uni)
+
