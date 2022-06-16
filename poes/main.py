@@ -76,13 +76,6 @@ area_tri = triang.rvs(c=0.3, loc=50, scale=450, size=1000)
 area_uni = uniform.rvs(loc=50, scale=500, size=1000)
 print(area_uni)
 
-########################################################################################################################3
-#TAREA JANNER
-import numpy as np
-#from poes.model.poes import poes
-from scipy.stats import expon, lognorm, norm, triang, uniform
-
-
 
 # %% Defining random values for porosity from norm_values variable
 
