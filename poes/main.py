@@ -76,6 +76,8 @@ area_tri = triang.rvs(c=0.3, loc=50, scale=450, size=1000)
 area_uni = uniform.rvs(loc=50, scale=500, size=1000)
 print(area_uni)
 
+# %% Defining random values for area from norm_values variable
+
 # Normal distribution
 SWI_norm = norm.rvs(loc=0.4, scale=0.2, size=1000)
 SWI_norm = np.where(SWI_norm < 0, 0, SWI_norm)
