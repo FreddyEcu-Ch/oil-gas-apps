@@ -102,7 +102,7 @@ print(thickness_log)
 thickness_exp = expon.rvs(loc=0, scale=50, size=1000)
 thickness_exp = np.where(thickness_exp > 180, 180, thickness_exp)
 print(thickness_exp)
-
+#
 # Triangular distribution
 thickness_tri = triang.rvs(c=0.3, loc=0, scale=150, size=1000)
 print(thickness_tri)
