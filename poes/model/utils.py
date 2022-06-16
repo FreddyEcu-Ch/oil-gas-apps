@@ -1,6 +1,5 @@
 # Python libraries
 from scipy.stats import norm, lognorm, expon, triang, uniform
-import pandas as pd
 import numpy as np
 
 
@@ -17,12 +16,12 @@ def param_poes(
     seed=None,
 ):
     """
-    This function has as a goal, return numpy array of any poes variables like area,
-    thickness, porosity, swi, boi. Furthermore, this numpy array contains random
-    variables from various continuous distributions
+    This function has as a goal, return numpy arrays of any stoiip variable like area,
+    thickness, porosity, oil saturation and Boi. Furthermore, this numpy array contains
+    random variables from various continuous distributions.
 
-        Parameters
-        ----------
+    Parameters
+    ----------
     df
         Pandas dataframe
     row
@@ -44,11 +43,12 @@ def param_poes(
     seed
         Specifies the seed number to create the random number generator
 
-        Returns
-        -------
-        numpy array of the any Stoiip parameter
+    Returns
+    -------
+    numpy array of the any Stoiip parameter
 
     """
+
     if seed is None:
         rng = np.random.default_rng()
     else:
@@ -101,7 +101,9 @@ def param_poes(
             random_state=rng,
         )
         param = np.where(
-            param > df.loc[row, lim_max_col], df.loc[row, lim_max_col], param,
+            param > df.loc[row, lim_max_col],
+            df.loc[row, lim_max_col],
+            param,
         )
 
     elif df.loc[row, dist_col] == "Uniforme":
@@ -111,4 +113,5 @@ def param_poes(
             size=iter,
             random_state=rng,
         )
+
     return param
